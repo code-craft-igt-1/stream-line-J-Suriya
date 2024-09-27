@@ -1,5 +1,5 @@
-#ifndef SENDER_H
-#define SENDER_H
+#ifndef SENDER_H_
+#define SENDER_H_
 
 #include <vector>
 #include <string>
@@ -11,14 +11,14 @@ struct Reading {
 };
 
 class Sender {
-public:
+ public:
     void generateReadings();
     void sendReadings() const;
 
     // Getter for readings to use in tests
     const std::vector<Reading>& getReadings() const;
 
-private:
+ private:
     std::vector<Reading> readings;
 
     float generateTemperature() const;
@@ -26,4 +26,4 @@ private:
     int generateSpo2() const;
 };
 
-#endif // SENDER_H
+#endif  // SENDER_H_
