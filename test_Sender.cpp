@@ -1,5 +1,5 @@
-#include "Sender.h"
 #include <gtest/gtest.h>
+#include "Sender.h"
 
 TEST(SenderTest, GenerateReadings) {
     Sender sender;
