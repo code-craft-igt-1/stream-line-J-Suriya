@@ -29,9 +29,9 @@ private:
 
         T minVal = *std::min_element(values.begin(), values.end());
         T maxVal = *std::max_element(values.begin(), values.end());
-        double sma = std::accumulate(values.begin(), values.end(), 0.0) / values.size();
+        double avg = std::accumulate(values.begin(), values.end(), 0.0) / values.size();
 
-        std::cout << parameterName << " - Min: " << minVal << ", Max: " << maxVal << ", SMA: " << sma << std::endl;
+        std::cout << parameterName << " - Min: " << minVal << ", Max: " << maxVal << ", Avg: " << avg << std::endl;
     }
 };
 
